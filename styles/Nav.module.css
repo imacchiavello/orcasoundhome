@@ -1,5 +1,6 @@
 .header{
   border-bottom: 1px solid #E2E8F0;
+  list-style-type: none;
 }
 
 .navbar {
@@ -25,16 +26,19 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #222222;
+  list-style-type: none;
 }
 
 .navmenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style-type: none;
 }
 
 .navitem {
   margin-left: 5rem;
+  list-style-type: none;
 }
 
 .navlink{
@@ -42,10 +46,11 @@
   font-weight: 100;
   color: white;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 .navlink:hover{
-  color: #482ff7;
+  color: #4792e7;
 }
 
 .navlogo {
@@ -56,7 +61,7 @@
 
 @media only screen and (max-width: 768px) {
   .navmenu {
-      position: fixed;
+      position:fixed;
       z-index: 1;
       right: -100%;
       top: 5rem;
@@ -79,8 +84,10 @@
   }
 
   .hamburger {
-      display: block;
+    display: block;
       cursor: pointer;
+     
+     align-content: flex-end;
     
   }
 

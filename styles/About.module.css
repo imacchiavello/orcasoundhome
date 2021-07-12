@@ -1,10 +1,9 @@
 
 .landingImage{
-height: auto;
-width: 1200px;
-z-index:0;
-background-size: cover;
-background-repeat: repeat;
+    width: 500px;
+    z-index:0;
+    background-size: cover;
+    height: 500px;
 
 }
 
@@ -15,10 +14,10 @@ background-repeat: repeat;
     position: absolute;
     z-index: 0;
     background-color: black;
-    color: white;
+    color:white;
     text-align: left;
    align-items: left;
-   margin-top: 190px;
+   margin-top: 200px;
    margin-left: 50px;
    top: 0;
 }
@@ -31,7 +30,7 @@ background-repeat: repeat;
     color: white;
     text-align: left;
    align-items: left;
-   margin-top: 228px;
+   margin-top: 238px;
    margin-left: 50px;
   top: 0;
 
@@ -50,16 +49,18 @@ background-repeat: repeat;
 
 
 .card{
+    border-color: none;
     margin-top: 60px;
     margin-bottom: 60px;
     margin-left: 40px;
     margin-right: 40px;
+    padding: 50px 50px;
    
 
 }
 
 
- .Card.Title{
+ .Title{
     background-color: blue;
 }
 
@@ -85,7 +86,7 @@ background-repeat: repeat;
 @media only screen and (max-width: 768px) {
    .landingText {
       position:absolute;
-      z-index: 1;
+      z-index: 0;
      top: 0rem;
      margin-top: 155px;
 }

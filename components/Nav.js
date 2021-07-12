@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Button from 'react-bootstrap/Button'
 import { useState } from "react";
 import orcasoundlogo from '../images/orcasoundlogo.png'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Nav({children}){
 
@@ -12,7 +13,7 @@ export default function Nav({children}){
   return <> 
           <header className={navStyles.header}>
               <nav className={navStyles.navbar}>
-                  <Link href='/'>
+                  <Link href='/home'>
                    <a className={navStyles.navlogo}><Image src={orcasoundlogo} width={90} height={70}/></a>
                   </Link>
               <ul className={isOpen === false ? 
@@ -36,12 +37,12 @@ export default function Nav({children}){
                       <Link href='/getinvolved'>
                         <a className={isOpen === false ? 
                                  navStyles.navlink : navStyles.navlink+' '+navStyles.active}
-                                  onClick={openMenu}>getinvolved</a>
+                                  onClick={openMenu}>get involved</a>
                       </Link>
                   </li>
                 
                   <li className={navStyles.navitem}>
-                      <Link href='/listen'>
+                      <Link href='/https://live.orcasound.net/'>
                        <a className={isOpen === false ? 
                                   navStyles.navlink :navStyles.navlink+' '+navStyles.active}
                                   onClick={openMenu}>Listen</a>
@@ -49,9 +50,9 @@ export default function Nav({children}){
                   </li>
                   <li className={navStyles.navitem}>
                       <Link href='/'>
-                        <a className={isOpen === false ? 
+                        <Button className ={isOpen === false ? 
                                  navStyles.navlink : navStyles.navlink+' '+navStyles.active}
-                                  onClick={openMenu}>Notify me</a>
+                                  onClick={openMenu}> Notify me </Button>
                       </Link>
                   </li>
               </ul>
