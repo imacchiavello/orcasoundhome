@@ -32,6 +32,8 @@ export const home =() =>{
   the Southern Resident of the Pacific Northwest. <br></br>
   At Orcasound you can listen for whales or learn more about marine bioacustics.
   </p>
+
+  <div className={homeStyles.cards}>
   
   <div className={homeStyles.card}>
   
@@ -71,7 +73,7 @@ export const home =() =>{
   
 </CardColumns>
 </div>
-  
+</div>
   
   </body>
   

@@ -5,7 +5,7 @@ import orca from '../images/orca2.png'
 import aboutStyles from '../styles/About.module.css'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import CardColumns from 'react-bootstrap/CardColumns'
 
 
@@ -90,7 +90,7 @@ projects-- created by volunteers,stewards,citizens,scientist,hackers and generou
   <Card>
     <Card.Img variant="top" src="https://www.aquariumcostadealmeria.com/wp-content/uploads/2019/01/shutterstock_554899423-1-1280x720.jpg" />
     <Card.Body>
-      <Card.Title>Sailish Sea Vessel Research</Card.Title>
+      <Card.Title>Sailish Sea Vessel</Card.Title>
   
     </Card.Body>
   </Card>
