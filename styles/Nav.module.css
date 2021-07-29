@@ -16,7 +16,6 @@
 
 .hamburger {
   display: none;
-  overflow: hidden;
 }
 
 .bar {
@@ -28,7 +27,6 @@
   transition: all 0.3s ease-in-out;
   background-color: #222222;
   list-style-type: none;
-  overflow: hidden;
 }
 
 .navmenu {
@@ -36,14 +34,11 @@
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  scroll-behavior: none;
-  overflow: hidden;
 }
 
 .navitem {
   margin-left: 5rem;
   list-style-type: none;
-  overflow: hidden;
 }
 
 .navlink{
@@ -52,7 +47,6 @@
   color: white;
   text-transform: uppercase;
   list-style-type: none;
-  overflow: hidden;
 }
 
 .navlink:hover{
@@ -67,39 +61,32 @@
 
 @media only screen and (max-width: 768px) {
   .navmenu {
-   
-position: fixed;
+      position:fixed;
       z-index: 1;
-      right: -150%;
+      right: -100%;
       top: 5rem;
       flex-direction: column;
       background-color:black;
       width: 100%;
-   
-    overflow: hidden;
       border-radius: 10px;
       text-align: center;
       transition: 0.3s;
       box-shadow:
           0 10px 27px rgba(0, 0, 0, 0.05);
-         
   }
 
   .navmenu.active {
       left: 0;
-      overflow: hidden;
   }
 
   .navitem {
       margin: 2.5rem 0;
-      overflow: hidden;
   }
 
   .hamburger {
     display: block;
       cursor: pointer;
-      overflow: hidden;
-     position: static;
+     
      align-content: flex-end;
     
   }
@@ -111,13 +98,11 @@ position: fixed;
   .hamburger.active .bar:nth-child(1) {
       -webkit-transform: translateY(8px) rotate(45deg);
       transform: translateY(8px) rotate(45deg);
-      overflow: hidden;
   }
 
   .hamburger.active .bar:nth-child(3) {
       -webkit-transform: translateY(-8px) rotate(-45deg);
       transform: translateY(-8px) rotate(-45deg);
-      overflow: hidden;
   }
 }
 
